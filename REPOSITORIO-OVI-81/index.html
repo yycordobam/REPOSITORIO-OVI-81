@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad No. 2 Creando una Pagina Web con HTML5 y CSS. </title>
+    <meta name="description" content="Actividad 3 Diseño Web">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" type="text/css" href="flexslider/flexslider.css">
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script type="text/javascript" src="js/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/supersubs.js"></script>
+    <script type="text/javascript" src="js/fade.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            //Menu
+            jQuery("ul.sf-menu").supersubs({
+                minWidth: 12,		// requires em unit.
+                maxWidth: 27,		// requires em unit.
+                extraWidth: 0	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+                // due to slight rounding differences and font-family
+            }).superfish();  // call supersubs first, then superfish, so that subs are
+            // not display:none when measuring. Call before initialising
+            // containing tabs for same reason.
+
+            /* portfolio gallery */
+            jQuery("a[rel^='prettyPhoto']").prettyPhoto({ animationSpeed: 'slow', theme: 'facebook', slideshow: 2000 });
+
+        });
+    </script>
+</head>
+<body>
+    <section id="contenedor">
+        <header>
+            <h1> <a href="index.html"><img src="img/logo.png" alt="logo.png"></a> </h1>
+            <section id="menu">
+                <nav>
+                    <ul>
+                        <li><a href='index.html'>Inicio</a></li>
+                        <li><a href='Lecturas.html'>Lecturas</a></li>
+                        <li><a href='Multimedia.html'>Multimedia</a></li>
+                        <li><a href='Actividades.html'>Actividades</a></li>
+                        <li><a href='Autores.html'>Autores</a></li>
+                    </ul>
+
+                </nav>
+            </section>
+        </header>
+        <div class="linea"></div>
+        <section id="banner">
+            <div class="slider">
+                <ul>
+                    <li>
+                        <div class="row">
+                            <br /> <br /> <br />
+
+                            <h2><span class=""><img src="img/texto.png" /></span></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <h4><img src="img/1.png" /></h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="linea"></div>
+        <section id="noticias">
+           
+            <iframe id="noticia1" src="https://www.youtube.com/embed/KiuTyXehW-8?ecver=1" frameborder="0"></iframe>
+           
+            
+            <div class="espacio"></div>
+        </section>
+        <div class="lineaMensaje">
+
+
+         <h3>INTRODUCCION A LA ADMINISTRACION DE REDES Y SEGURIDAD</h3>
+
+
+        </div>
+        <section id="sitios">
+            <div style="width:335px; float:left">
+                <h1>Introducción administración de redes</h1>
+                <br />
+                <p style="text-align:justify">
+                    En la actualidad, los sistemas operativos más populares, tales como Windows 2000 de Microsoft y Linux, se pueden encontrar tanto en servidores de gran potencia para redes y en los escritorios de los usuarios
+                    <span class="jump-link9"><a href="Lecturas.html">(Leer más...)</a></span>
+                </p>
+            </div>
+            <div style="width:335px; float:right">
+                <h1> Gestión de seguridad y gestión de redes </h1>
+                <br />
+                <p style="text-align:justify">
+                    Hoy en día todos dependemos de la información que radica y generamos en nuestras computadoras; hoy dependemos de una conexión física para podernos comunicar, el avance que se ha tenido con las redes nos ha permitido solucionar problemas y hacer provecho de sistemas que nos ayudan a manipulara la información.<span class="jump-link9"><a href="Lecturas.html">(Leer más...)</a></span>
+                </p>
+            </div>
+            
+            <div class="espacio"></div>
+        </section>
+        <div class="lineaMensaje">
+           <h3>CAPÍTULO 1. AMENAZAS A LA SEGURIDAD EN REDES  </h3> 
+
+        </div>
+        <aside id="imgchoco">
+            <p>
+                El vandalismo computacional se manifiesta en muchas formas. Las diferentes categorías de este vandalismo se basan en cómo éstas se extienden y se activan. Los programas Caballos de Troya, por ejemplo, son programas disfrazados como algo inofensivo pero activados por la propia víctima. <span class="jump-link9"><a href="Lecturas.html">(Leer más...)</a></span>
+            </p>
+        </aside>
+
+        <footer>
+            <p>
+                ©Todos los derechos reservados. Quibdó - Choco <br>
+                Desarrollado por Yeison Yair Cordoba, Estudiante UNAD - CEAD QUIBDO
+            </p>
+            <div style="text-align:center">
+                <a href="https://www.contadorvisitasgratis.com" title="contador de visitas para blog"><img src="https://counter8.fcs.ovh/private/contadorvisitasgratis.php?c=8qa9njdbuwuskqwjpa9gl8fyxgmm69pk" border="0" title="contador de visitas para blog" alt="contador de visitas para blog"></a>
+            </div>
+            <br />
+        </footer>
+    </section>
+</body>
+</html>
